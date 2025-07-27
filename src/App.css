@@ -31,7 +31,6 @@
   margin: 0;
 
 }
-
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -99,6 +98,9 @@ html {
 /* Start Header */
 .hero {
   position: relative;
+  min-height: 70vh;
+  background-image: url('images/bg-presentation.jpg');
+  background-size: cover;
 }
 header {
   margin: 10px 150px;
@@ -150,5 +152,27 @@ header .btn:hover {
   box-shadow: rgba(26, 115, 232, 0.4) 0rem 0.875rem 1.625rem -0.75rem,
     rgba(26, 115, 232, 0.15) 0rem 0.25rem 1.4375rem 0rem,
     rgba(26, 115, 232, 0.2) 0rem 0.5rem 0.625rem -0.3125rem;;
+}
+/* Start Content */
+.hero .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  min-height: calc(70vh - 70px);
+}
+.hero .content h1 {
+  color: white;
+  font-size: var(--fs-3);
+  font-family:"math";
+}
+.hero .content p {
+  color: white;
+  font-size: var(--fs-1-25);
+  max-width: 422px;
+  line-height: var(--lh-1-6);
+  text-align: center;
+  font: 400;
 }
 /* End Hero Sec */
