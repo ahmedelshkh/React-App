@@ -6,6 +6,7 @@
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
+  --text-primary: rgb(52, 71, 103);
   --text-light: rgb(123, 128, 154);
   --header-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem,
     rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
