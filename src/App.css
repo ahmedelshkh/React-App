@@ -4,6 +4,7 @@
   --blue-alt-color: rgb(174, 206, 247);
   --gradient-color: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
   --green-color: #22c55e;
+  --white-color: white;
   --red-color: #f44336;
   --grey-color: #888;
   --text-primary: rgb(52, 71, 103);
@@ -11,6 +12,7 @@
   --header-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem,
     rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
   /* fs */
+  --fs-0-857: 0.857rem;
   --fs-1-25: 1.25rem;
   --fs-1-875: 1.875rem;
   --fs-3: 3rem;
@@ -87,5 +89,66 @@ html {
   margin: 0 auto;
 
 }
-
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 /* end global rules */
+/* Start Hero Sec */
+/* Start Header */
+.hero {
+  position: relative;
+}
+header {
+  margin: 10px 150px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--header-shadow);
+  border-radius: .75rem;
+  position: sticky;
+}
+header .logo {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+header .nav {
+  display: flex;
+  gap: 40px;
+}
+header .nav a {
+  opacity: .7;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .nav a svg {
+  width: 15px;
+  fill: var(--text-primary);
+}
+header .nav a span {
+  color: var(--text-primary);
+  font-size: var(--fs-0-857);
+}
+header .btn {
+  font-weight: bold;
+  color: var(--white-color);
+  padding: 10px 15px;
+  background: var(--gradient-color);
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: .3s;
+  font-size: var(--fs-0-857);
+  box-shadow: rgba(26, 115, 232, 0.15) 0rem 0.1875rem 0.1875rem 0rem,
+    rgba(26, 115, 232, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem,
+    rgba(26, 115, 232, 0.15) 0rem 0.0625rem 0.3125rem 0rem;
+}
+header .btn:hover {
+  transform: scale(.9);
+  box-shadow: rgba(26, 115, 232, 0.4) 0rem 0.875rem 1.625rem -0.75rem,
+    rgba(26, 115, 232, 0.15) 0rem 0.25rem 1.4375rem 0rem,
+    rgba(26, 115, 232, 0.2) 0rem 0.5rem 0.625rem -0.3125rem;;
+}
+/* End Hero Sec */
