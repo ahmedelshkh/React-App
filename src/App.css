@@ -101,9 +101,10 @@ html {
   min-height: 70vh;
   background-image: url('images/bg-presentation.jpg');
   background-size: cover;
+  padding-top: 10px;
 }
 header {
-  margin: 10px 150px;
+  margin:0 150px 10px 150px;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -111,6 +112,7 @@ header {
   box-shadow: var(--header-shadow);
   border-radius: .75rem;
   position: sticky;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 header .logo {
   color: var(--text-primary);
